@@ -33,11 +33,11 @@ def reverse_words(sentence):
     sentence = sentence.split()
     reverse = ""
 
-    for word in range(len(sentence)-1,-1,-1):  
+    for i in range(len(sentence)-1,-1,-1):  
 
-        reverse = reverse + " " + (sentence[word])   
+        reverse = reverse + " " + (sentence[i])   
 
-    return reverse
+    return reverse.strip()
 
 
 def letter_counts(text):
